@@ -5,3 +5,9 @@
 const isPalindrome = (line) => {
   return line.toString() === line.toString().split('').reverse().join('');
 }
+
+// or
+const isPalindrome = (line) => {
+  line = line.toString();
+  return line === line.split('').reverse().join('');
+}
